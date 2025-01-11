@@ -3,7 +3,7 @@ from streamlit_gsheets import GSheetsConnection
 import datetime
 import pandas as pd
 
-st.title("Google Sheets Multi-Worksheet Explorer")
+st.title("Life Tracking 2025")
 
 # Connect to your Google Sheet
 conn = st.connection("gsheets", type=GSheetsConnection)
