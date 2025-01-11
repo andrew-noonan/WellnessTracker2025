@@ -1,4 +1,4 @@
 # Project dependencies
 streamlit
 pandas
-streamlit-gsheets
+st-gsheets-connection
