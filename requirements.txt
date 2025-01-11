@@ -1,1 +1,4 @@
 # Project dependencies
+streamlit
+pandas
+streamlit-gsheets
