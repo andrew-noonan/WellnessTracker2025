@@ -140,8 +140,8 @@ for i, worksheet_name in enumerate(worksheets):
                         last_sets_reps = exercise_data[exercise].iloc[-1] if not exercise_data.empty else "N/A"
                         st.write(f"Last workout: {last_sets_reps}")
 
-                        col1, col2, col3, col4, col5 = st.columns(5)
-                        reps_input = [col.number_input(f"Set {i+1} Reps", 0, 50, key=f"{exercise}_reps_{i+1}") for i, col in enumerate([col1, col2, col3, col4, col5])]
+                        col1, col2, col3 = st.columns(3)
+                        reps_input = [col.number_input(f"Set {i+1} Reps", 0, 50, key=f"{exercise}_reps_{i+1}") for i, col in enumerate([col1, col2, col3])]
                         weight_input = [col.number_input(f"Set {i+1} Weight (lbs)", 0, 1000, key=f"{exercise}_weight_{i+1}") for i, col in enumerate([col1, col2, col3, col4, col5])]
 
                         sets_reps_input = [f"{reps}@{weight}" for reps, weight in zip(reps_input, weight_input) if reps > 0]
