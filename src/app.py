@@ -9,7 +9,7 @@ st.title("Life Tracking 2025")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 # List of worksheet names (customize as needed)
-worksheets = ["Tracking", "Push", "Pull", "Legs"]
+worksheets = ["Tracking", "Workout A", "Workout B", "Workout C"]
 
 # Create tabs in the UI
 tabs = st.tabs(worksheets)
