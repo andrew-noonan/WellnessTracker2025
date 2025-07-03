@@ -9,7 +9,7 @@ st.title("Life Tracking 2025")
 conn = st.connection("gsheets", type=GSheetsConnection)
 
 # List of worksheet names (customize as needed)
-worksheets = ["Tracking", "Workout A", "Workout B", "Workout C"]
+worksheets = ["Tracking", "A", "B", "C"]
 
 # Create tabs in the UI
 tabs = st.tabs(worksheets)
@@ -107,7 +107,7 @@ for i, worksheet_name in enumerate(worksheets):
 
                     st.success(f"Data for {today_str} submitted successfully!")
                     #st.rerun()
-        elif worksheet_name in ["Workout A", "Workout B", "Workout C"]:
+        elif worksheet_name in ["A", "B", "C"]:
             st.subheader(f"Worksheet: {worksheet_name}")
 
             # Read data from the sheet
