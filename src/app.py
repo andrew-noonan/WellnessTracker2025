@@ -107,7 +107,7 @@ for i, worksheet_name in enumerate(worksheets):
 
                     st.success(f"Data for {today_str} submitted successfully!")
                     #st.rerun()
-        elif worksheet_name in ["Push", "Pull", "Legs"]:
+        elif worksheet_name in ["Workout A", "Workout B", "Workout C"]:
             st.subheader(f"Worksheet: {worksheet_name}")
 
             # Read data from the sheet
